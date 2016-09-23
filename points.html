@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>大道芸ワールドカップin静岡 2016 ポイント室</title>
+    <meta charset="UTF-8">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <style>
+        .accordion-fill {
+            width: 100%;
+            margin: 10px 0 5px 5px;
+        }
+        
+        .tab-row {
+            margin-top: 1em;
+        }
+        
+        .collapsible-body {
+            padding: 2em;
+        }
+        
+        .position-pl {
+            border-radius: 2px;
+            margin: 2px 5px;
+            background-color: crimson;
+            font-size: 0.8rem;
+            padding: 0 6px;
+            color: white;
+        }
+        
+        .position-tr {
+            border-radius: 2px;
+            margin: 2px 5px;
+            background-color: mediumblue;
+            font-size: 0.8rem;
+            padding: 0 6px;
+            color: white;
+        }
+        
+        .position-ps {
+            border-radius: 2px;
+            margin: 2px 5px;
+            background-color: mediumseagreen;
+            font-size: 0.8rem;
+            padding: 0 6px;
+            color: white;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#tab-bar').tabs();
+            $('.collapsible').collapsible({
+                accordion: false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">配置表</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row tab-row">
+            <div class="col s12">
+                <ul class="tabs" id="tab-bar">
+                    <li class="tab col s3"><a target="_self" href="index.html">人別</a></li>
+                    <li class="tab col s3"><a class="active" href="points.html">ポイント別</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">11/3</span>
+                        <ul class="collapsible" data-collapsible="accordion">
+                            <li>
+                                <div class="collapsible-header">
+                                    メイン1</div>
+                                <div class="collapsible-body">
+                                    <table class="bordered striped">
+                                        <tbody>
+                                            <tr>
+                                                <td><span class="position-pl">PL</span>宮沢　吾朗</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="position-pl">PL</span>橋本　雄二郎</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="position-tr">TR</span>マイケル　レドモンド</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="position-ps">PS</span>彦坂　直人</td>
+                                                <td>-19:00</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="position-ps">PS</span>安田　泰敏</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="position-ps">PS</span>石田　篤司</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="position-ps">PS</span>中野　寛也</td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">
+                                    メイン2</div>
+                                <div class="collapsible-body"> </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">
+                                    メイン3</div>
+                                <div class="collapsible-body"> </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">
+                                    メイン4</div>
+                                <div class="collapsible-body"> </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">11/4</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">11/5</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">11/6</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
